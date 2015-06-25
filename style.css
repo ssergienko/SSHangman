@@ -1,0 +1,156 @@
+body {
+	background-image: url("./images/bkg1.png");
+	font-family: "Arimo", sans-serif;
+}
+
+.main-block-wrapper {
+	position: absolute;
+	width: 320px;
+	height: 440px;
+	background-color: #102b4e;
+	top: 50%;
+	left: 50%;
+	margin: -220px 0 0 -160px;
+	
+	border-top: 2px solid white;
+	border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+	
+	-webkit-box-shadow: 0 20px 60px -30px black;
+	   -moz-box-shadow: 0 20px 60px -30px black;
+	        box-shadow: 0 15px 25px -15px black;
+}
+
+	.number {
+		font-family: 'Press Start 2P', cursive;
+		font-size: 1.4em;
+	}
+	.score span {
+		color: red;
+	}
+	.total-counter span, .tried-counter span {
+		color: #c98b15;
+	}
+	.attempts-counter span {
+		color: #85a62d;
+	}
+
+	.scoreboard {
+		width: 100%;
+		padding-top: 70px;
+		border-bottom: 2px solid white;
+	}
+		.score-wrapper {
+			position: absolute;
+			top: -2px;
+			left: 50%;
+			margin: 0 0 0 -70px;
+			width: 140px;
+			height: 64px;
+			border: 2px solid white;
+		}
+		.score-text {
+			position: absolute;
+			top: 55px;
+			left: 50%;
+			margin: 0 0 0 -40px;
+			height: 20px;
+			background-color: #102b4e;
+			padding: 4px 12px;
+			color: white;
+		}
+			.score {
+				position: absolute;
+				left: 50%;
+				margin: 0 0 0 -60px;
+				width: 120px;
+				height: 35px;
+				background-color: black;
+				text-align: center;
+				padding-top: 20px;
+			}
+				
+		.titles-line {			
+			height: 30px;
+			color: white;
+			font-style: italic;
+			font-weight: bold;
+			font-size: 1.4em;
+			padding: 0 20px;
+		}
+			.total-text {
+				float: right;
+			}
+		.counters-line {
+			width: 100%;
+			height: 60px;
+		}
+			.tried-counter-wrapper , .total-counter-wrapper{
+				padding: 2px 10px 10px 10px;
+				width: 95px;
+				height: 50px;
+				float: right;
+				text-align: center;
+			}
+			.attempts-counter-wrapper {
+				position: absolute;
+				left: 50%;
+				margin: -15px 0 0 -50px;
+				width: 100px;
+				height: 70px;
+				text-align: center;
+			}
+				.attempts-counter {
+					height: 35px;
+					width: 86px;
+					margin-left: 7px;
+					background-color: black;
+					padding-top: 13px;
+				}
+				.attempts-text {
+					font-size: 1em;
+					font-weight: bold;
+					font-style: italic;
+					color: white;
+					margin-top: 5px;
+				}
+			.tried-counter-wrapper {
+				float: left;
+			}
+				.total-counter, .tried-counter  {
+					height: 35px;
+					width: 100%;
+					background-color: black;
+					padding-top: 13px;
+				}
+				
+	.game-area {
+		width: 100%;
+		height: 94px;
+		font-size: 1.8em;
+		text-align: center;
+		color: white;
+		margin-top: 60px;
+	}
+	.spinner {
+		
+	}
+	
+	.buttons {
+		width: 100%;
+		border-top: 2px solid white;
+	}
+		.keys-table {
+			width: 100%;
+			border: 1px solid white;
+		}
+			.keys-table td {
+				padding: 10px;
+				background-color: white;
+				cursor: pointer;
+				font-weight: bold;
+			}
+			.submit {
+				color: green;
+			}

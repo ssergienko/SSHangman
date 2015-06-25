@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My hangman</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link href="http://fonts.googleapis.com/css?family=Arimo" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="target-densitydpi=device-dpi" />
+</head>
+<body>
+	<div class="main-block-wrapper">
+		<div class="scoreboard" id="scoreboard">
+			<!-- scoreboard template is declared down of this page -->
+		</div>
+		<div class="game-area">
+			<div id="word"></div>
+		</div>
+		<div class="buttons">
+			<table class="keys-table" id="keyboard"></table>
+		</div>
+	</div>
+	
+	<!----------------------- TEMPLATES todo@ move to separate files----------------------->
+	 
+	<!-- TODO: move data to collection -->
+	<script type="text/template" id="keyboardTemplate">
+		<tr>
+			<td>A</td>
+			<td>B</td>
+			<td>C</td>
+			<td>D</td>
+			<td>E</td>
+			<td>F</td>
+			<td>G</td>
+			<td>H</td>
+			<td>I</td>
+		</tr>
+		<tr>
+			<td>J</td>
+			<td>K</td>
+			<td>L</td>
+			<td>M</td>
+			<td>N</td>
+			<td>O</td>
+			<td>P</td>
+			<td>Q</td>
+			<td>R</td>
+		</tr>
+		<tr>
+			<td>S</td>
+			<td>T</td>
+			<td>U</td>
+			<td>V</td>
+			<td>W</td>
+			<td>X</td>
+			<td>Y</td>
+			<td>Z</td>
+			<td class="submit">@</td>
+		</tr>
+	</script>
+	
+	<script type="text/template" id="scoreboardTemplate">
+		<div class="score-wrapper">
+			<div class="score">
+				<span class="number" id="score"><%=score%></span>
+			</div>
+			<div class="score-text">SCORE</div>
+		</div>
+		<div class="titles-line">
+			<div class="total-text">TOTAL</div>
+			<div class="tried-text">TRIED</div>
+		</div>
+		<div class="counters-line">
+			<div class="total-counter-wrapper">
+				<div class="total-counter">
+					<span class="number" id="total"><%=numberOfWordsToGuess%></span>
+				</div>
+			</div>
+			<div class="attempts-counter-wrapper">
+				<div class="attempts-counter">
+					<span  class="number" id="attempts"><%=numberOfAttempts%></span>
+				</div>
+				<div class="attempts-text">ATTEMPTS</div>
+			</div>
+			<div class="tried-counter-wrapper">
+				<div class="tried-counter">
+					<span class="number" id="tried"><%=totalWordCount%></span>
+				</div>
+			</div>
+		</div>
+	</script>
+	
+	<script type="text/template" id="wordTemplate">
+		<span><%=word%></span>
+	</script>
+	
+	<!----------------------- SCRIPTS ----------------------->
+	
+	<script type="text/javascript" src="./js/libs/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="./js/libs/underscore-min.js"></script>
+	<script type="text/javascript" src="./js/libs/backbone-min.js"></script>
+	<script type="text/javascript" src="./js/libs/backbone.marionette.min.js"></script>
+	<script type="text/javascript" src="./js/application.js"></script>
+	
+</body>
+</html>
