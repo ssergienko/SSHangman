@@ -19,7 +19,7 @@ Hangman.sendRequest = function (options) {
 	// send request
 	new Backbone.Model()
 	.fetch({
-		url: 'https://secretUrl',
+		url: 'https://strikingly-hangman.herokuapp.com/game/on',
 		type: "POST",
 		data: JSON.stringify(params)
 	})
@@ -177,7 +177,7 @@ Hangman.on("newGameStarted", function (newGameData) {
 
 // game started
 Hangman.on("start", function(options){	
-	Hangman.sendRequest({ "action": "startGame", "playerId": "*****@*****.***" });
+	Hangman.sendRequest({ "action": "startGame", "playerId": "sergeys@apacsale.com" });
 });
 
 Hangman.start();
